@@ -16,8 +16,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="DTOs\" />
-    <Folder Include="Features\Queries\" />
     <Folder Include="Filters\" />
   </ItemGroup>
 

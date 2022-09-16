@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using School.Application.Features.Commands.CreateSchoolCommand;
 using School.Application.Features.Commands.DeleteSchoolCommand;
 using School.Application.Features.Commands.UpdateSchoolCommand;
+using School.Application.Features.Queries.GetById;
 
 namespace School.Api.Controllers.v1
 {
@@ -16,6 +17,14 @@ namespace School.Api.Controllers.v1
         {
             return Ok(await mediator.Send(command));
         }
+
+        //GET api/controller/5
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetById(int id)
+        {
+            return Ok(await mediator.Send(new GetByIdQuery() { ColegioId = id}));
+        }
+
 
         //PUT api/controller
         [HttpPut("{id}")]
