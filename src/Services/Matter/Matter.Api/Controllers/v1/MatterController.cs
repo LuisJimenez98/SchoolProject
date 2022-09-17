@@ -1,4 +1,5 @@
 ﻿using Matter.Application.Features.Commands.CreateMatterCommand;
+using Matter.Application.Features.Commands.DeleteCreateMatterCommand;
 using Matter.Application.Features.Commands.UpdateMatterCommand;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
@@ -26,5 +27,14 @@ public class MatterController : BaseApiController
 
         return Ok(await Mediator.Send(command));
     }
+
+    //DELETE api/controller/1
+    [HttpDelete("{id}")]
+    public async Task<IActionResult> Delete(int id)
+    {
+        return Ok(await Mediator.Send(new DeleteMatterCommand() { MateriaId = id}));
+    }
+
+
 
 }

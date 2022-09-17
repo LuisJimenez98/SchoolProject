@@ -37,7 +37,7 @@ public class SchoolController : BaseApiController
 
     //PUT api/controller
     [HttpPut("{id}")]
-    public async Task<IActionResult> Create(int id, UpdateSchoolCommand command)
+    public async Task<IActionResult> Update(int id, UpdateSchoolCommand command)
     {
         if (id != command.ColegioId)
             return BadRequest();
@@ -48,7 +48,7 @@ public class SchoolController : BaseApiController
 
     //DELETE api/controller
     [HttpDelete("{id}")]
-    public async Task<IActionResult> Create(int id)
+    public async Task<IActionResult> Delete(int id)
     {
         return Ok(await mediator.Send(new DeleteSchoolCommand { ColegioId = id }));
     }
