@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Qualification.Application.DTOs;
 using Qualification.Application.Features.CreateQualificationCommand;
 using Qualification.Domain.Entity;
 using System;
@@ -14,6 +15,7 @@ namespace Qualification.Application.Mappers
         public Mapping()
         {
             CreateMap<CreateQualificationCommand, Calificacion>();
+            CreateMap<Calificacion, CalificacionDto>();
         }
     }
 }
