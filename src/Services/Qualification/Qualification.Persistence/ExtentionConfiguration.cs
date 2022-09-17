@@ -11,7 +11,7 @@ public static class ExtentionConfiguration
     {
         services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(
             configuration.GetConnectionString("DefaultConnection"),
-            x => x.MigrationsHistoryTable("__EFMigrationsHistory", "Matter")
+            x => x.MigrationsHistoryTable("__EFMigrationsHistory", "Qualification")
             ));
 
         services.AddTransient(typeof(IRepository<>), typeof(MyRepository<>));
