@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <Folder Include="DTOs\" />
+    <Folder Include="Features\Commands\DeleteCreateMatterCommand\" />
     <Folder Include="Features\Queries\" />
     <Folder Include="Specifications\" />
     <Folder Include="Parameters\" />

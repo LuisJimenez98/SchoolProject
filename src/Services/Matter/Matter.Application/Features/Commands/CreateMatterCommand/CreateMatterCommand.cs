@@ -10,7 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Matter.Application.Features.Commands
+namespace Matter.Application.Features.Commands.CreateMatterCommand
 {
     public class CreateMatterCommand : IRequest<Response<int>>
     {

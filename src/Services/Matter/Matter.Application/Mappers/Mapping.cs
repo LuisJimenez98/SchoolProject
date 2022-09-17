@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using Matter.Application.Features.Commands;
+using Matter.Application.Features.Commands.CreateMatterCommand;
 using Matter.Domain.Entity;
 using System;
 using System.Collections.Generic;
