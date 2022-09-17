@@ -20,9 +20,13 @@ namespace Matter.Persistence.Configuration
                 .IsRequired();
 
             builder
-                .Property(x => x.Nombre)
-                .IsRequired()
-                .HasMaxLength(256);
+              .Property(x => x.Nombre)
+               .IsRequired()
+                .HasMaxLength(128);
+
+            builder
+                .HasIndex(x => x.Nombre)
+                .IsUnique();
 
             builder
                 .Property(x => x.Area)
