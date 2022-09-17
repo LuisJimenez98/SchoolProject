@@ -1,10 +1,10 @@
 ﻿using FluentValidation;
+using Matter.Application.Behaviors;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
-using School.Application.Behaviors;
 using System.Reflection;
 
-namespace School.Application.Wrappers;
+namespace Matter.Application.Wrappers;
 public static class ServiceExtensions
 {
     public static void AddApplicationLayer(this IServiceCollection services)

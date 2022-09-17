@@ -25,11 +25,5 @@ namespace School.Application.Wrappers
             Data = data;
         }
 
-        public Response(string message)
-        {
-            Succeded = true;
-            Message = message;  
-        }
-
     }
 }

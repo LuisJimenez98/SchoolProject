@@ -28,6 +28,5 @@ public class CreateSchoolCommandHandler : IRequestHandler<CreateSchoolCommand, R
         var data = await _repository.AddAsync(school);
 
         return new Response<int>(data.ColegioId);
-        throw new NotImplementedException();
     }
 }
