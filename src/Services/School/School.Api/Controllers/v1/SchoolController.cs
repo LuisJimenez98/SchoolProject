@@ -22,7 +22,7 @@ public class SchoolController : BaseApiController
 
     //GET api/controller
     [HttpGet]
-    public async Task<IActionResult> GetById([FromQuery] RequestParameter filter)
+    public async Task<IActionResult> Get([FromQuery] RequestParameter filter)
     {
         return Ok(await mediator.Send(new GetAllQuery() { PageNumber = filter.PageNumber, PageSize = filter.PageSize })); ;
     }

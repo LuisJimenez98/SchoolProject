@@ -1,19 +1,14 @@
 ﻿using AutoMapper;
+using Matter.Application.DTOs;
 using Matter.Application.Features.Commands.CreateMatterCommand;
 using Matter.Domain.Entity;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Matter.Application.Mappers
+namespace Matter.Application.Mappers;
+public class Mapping : Profile
 {
-    public class Mapping : Profile
+    public Mapping()
     {
-        public Mapping()
-        {
-            CreateMap<CreateMatterCommand, Materia>();
-        }
+        CreateMap<CreateMatterCommand, Materia>();
+        CreateMap<Materia, MateriaDto>();
     }
 }

@@ -1,8 +1,11 @@
 ﻿using Matter.Application.Features.Commands.CreateMatterCommand;
 using Matter.Application.Features.Commands.DeleteCreateMatterCommand;
 using Matter.Application.Features.Commands.UpdateMatterCommand;
+using Matter.Application.Features.Queries.GetAll;
+using Matter.Application.Parameters;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ApplicationModels;
 
 namespace Matter.Api.Controllers.v1;
 
@@ -35,6 +38,11 @@ public class MatterController : BaseApiController
         return Ok(await Mediator.Send(new DeleteMatterCommand() { MateriaId = id}));
     }
 
-
+    //GET api/controller
+    [HttpGet]
+    public async Task<IActionResult> Get([FromQuery] RequestParameter filter)
+    {
+        return Ok(await Mediator.Send(new GetAllQuery() { PageSize = filter.PageSize, PageNumber = filter.PageNumber }));
+    }
 
 }

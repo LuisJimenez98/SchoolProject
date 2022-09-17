@@ -9,9 +9,9 @@ public class PagedResponse<T> : Response<T>
         Data = data;
         PageNumber = pageNumber;
         PageSize = pageSize;
-        Message = null!;
+        Message = null;
         Success = true;
-        Errors = null!;
+        Errors = null;
     }
 
 
