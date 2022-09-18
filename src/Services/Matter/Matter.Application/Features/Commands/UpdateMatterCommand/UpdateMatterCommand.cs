@@ -8,7 +8,7 @@ namespace Matter.Application.Features.Commands.UpdateMatterCommand
 {
     public class UpdateMatterCommand : IRequest<Response<int>>
     {
-        public int MateriId { get; set; }
+        public int MateriaId { get; set; }
         public int ColegioId { get; set; }
         public string? Nombre { get; set; }
         public string? Area { get; set; }
@@ -31,10 +31,10 @@ namespace Matter.Application.Features.Commands.UpdateMatterCommand
 
         public async Task<Response<int>> Handle(UpdateMatterCommand request, CancellationToken cancellationToken)
         {
-            var matter = await _repository.GetByIdAsync(request.MateriId);
+            var matter = await _repository.GetByIdAsync(request.MateriaId);
 
             if (matter == null)
-                throw new KeyNotFoundException($"Resgistro no encontrado con el id {request.MateriId}");
+                throw new KeyNotFoundException($"Resgistro no encontrado con el id {request.MateriaId}");
             else
             {
                 matter.ColegioId = request.ColegioId;

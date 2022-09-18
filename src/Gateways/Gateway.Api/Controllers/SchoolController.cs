@@ -1,5 +1,5 @@
 ﻿using Api.Gateway.Application.Behaviors.Commands.School;
-using Api.Gateway.Application.Behaviors.Queries.School;
+using Api.Gateway.Application.Behaviors.Queries;
 using Api.Gateway.Application.Parameters;
 using Api.Gateway.Application.Wrappers;
 using Microsoft.AspNetCore.Mvc;
@@ -32,7 +32,7 @@ namespace Gateway.Api.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
-            return Ok(await _schoolProxy.GetByIdAsync(new GetByIdQuery() { ColegioId = id }));
+            return Ok(await _schoolProxy.GetByIdAsync(new GetByIdQuery() { Id = id }));
         }
 
 
@@ -42,7 +42,7 @@ namespace Gateway.Api.Controllers
             if (id != command.ColegioId)
                 return BadRequest();
 
-            return Ok(await _schoolProxy.UdateAsync(command));
+            return Ok(await _schoolProxy.UpdateAsync(command));
         }
 
 

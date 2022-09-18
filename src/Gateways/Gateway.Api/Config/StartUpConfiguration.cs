@@ -16,6 +16,8 @@ namespace Gateway.Api.Config
             service.AddHttpContextAccessor();
 
             service.AddHttpClient<ISchoolProxy, SchoolProxy>();
+            service.AddHttpClient<IMatterProxy, MatterProxy>();
+            service.AddHttpClient<IQualificationProxy, QualificationProxy>();
 
             return service;
         }

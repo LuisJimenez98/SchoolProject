@@ -26,7 +26,7 @@ public class MatterController : BaseApiController
     [HttpPut("{id}")]
     public async Task<IActionResult> Update(int id, UpdateMatterCommand command)
     {
-        if(id != command.MateriId)
+        if(id != command.MateriaId)
             return BadRequest();
 
         return Ok(await Mediator.Send(command));
