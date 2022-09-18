@@ -5,7 +5,7 @@ VisualStudioVersion = 17.3.32901.215
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clients", "Clients", "{7FD8A09A-CDD8-431D-9807-0703FB24AE90}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApiGateways", "ApiGateways", "{DE490907-CE78-4098-8D52-704B107452AF}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gateways", "Gateways", "{DE490907-CE78-4098-8D52-704B107452AF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{EB8140F5-FD04-4564-B66F-F335ABCDD5D5}"
 EndProject
@@ -33,13 +33,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infraestructure", "Infraest
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{D738610A-F24F-425D-B310-FE0E1FD5C3D0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Matter.Application", "src\Services\Matter\Matter.Application\Matter.Application.csproj", "{A17F6CA1-2F5E-4A42-989D-04B2290E4B74}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Matter.Application", "src\Services\Matter\Matter.Application\Matter.Application.csproj", "{A17F6CA1-2F5E-4A42-989D-04B2290E4B74}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Matter.Domain", "src\Services\Matter\Matter.Domain\Matter.Domain.csproj", "{4ED7999A-DAEE-4FD8-81A3-23FAD1C2A948}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Matter.Domain", "src\Services\Matter\Matter.Domain\Matter.Domain.csproj", "{4ED7999A-DAEE-4FD8-81A3-23FAD1C2A948}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Matter.Persistence", "src\Services\Matter\Matter.Persistence\Matter.Persistence.csproj", "{56E57771-3235-4A3B-A17E-9D9E32A18646}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Matter.Persistence", "src\Services\Matter\Matter.Persistence\Matter.Persistence.csproj", "{56E57771-3235-4A3B-A17E-9D9E32A18646}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Matter.Api", "src\Services\Matter\Matter.Api\Matter.Api.csproj", "{46DB8601-BFE4-4B03-8929-26AA7F30DE7B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Matter.Api", "src\Services\Matter\Matter.Api\Matter.Api.csproj", "{46DB8601-BFE4-4B03-8929-26AA7F30DE7B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Qualification", "Qualification", "{E26997E4-C42B-4D0F-8D08-3139F026E026}"
 EndProject
@@ -49,13 +49,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infraestructure", "Infraest
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{0BD8CBE6-A411-4A79-8DD1-35C0BA301FB4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Qualification.Application", "src\Services\Qualification\Qualification.Application\Qualification.Application.csproj", "{967FEEFB-6449-4772-80D1-E203CF0CD00E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Qualification.Application", "src\Services\Qualification\Qualification.Application\Qualification.Application.csproj", "{967FEEFB-6449-4772-80D1-E203CF0CD00E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Qualification.Domain", "src\Services\Qualification\Qualification.Domain\Qualification.Domain.csproj", "{F99776F1-6FE0-4221-B8A2-2FA6551751E0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Qualification.Domain", "src\Services\Qualification\Qualification.Domain\Qualification.Domain.csproj", "{F99776F1-6FE0-4221-B8A2-2FA6551751E0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Qualification.Api", "src\Services\Qualification\Qualification.Api\Qualification.Api.csproj", "{C8748465-3619-4467-B1F8-76CCB60508BC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Qualification.Api", "src\Services\Qualification\Qualification.Api\Qualification.Api.csproj", "{C8748465-3619-4467-B1F8-76CCB60508BC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Qualification.Persistence", "src\Services\Qualification\Qualification.Persistence\Qualification.Persistence.csproj", "{55A7A495-7445-43CE-A76D-3D016BC8E84F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Qualification.Persistence", "src\Services\Qualification\Qualification.Persistence\Qualification.Persistence.csproj", "{55A7A495-7445-43CE-A76D-3D016BC8E84F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "User", "User", "{FA26C0E8-1D0F-4B13-9145-565DDE4A9175}"
 EndProject
@@ -65,13 +65,25 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infraestructure", "Infraest
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{2473F124-282B-4D8F-8075-1FD5F0736C3C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "User.Application", "src\Services\User\User.Application\User.Application.csproj", "{0F5685A9-E54E-46B8-8CCE-2892DD8528DE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "User.Application", "src\Services\User\User.Application\User.Application.csproj", "{0F5685A9-E54E-46B8-8CCE-2892DD8528DE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "User.Domain", "src\Services\User\User.Domain\User.Domain.csproj", "{41DCB725-CB70-4B89-BDB0-7815DB076A0A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "User.Domain", "src\Services\User\User.Domain\User.Domain.csproj", "{41DCB725-CB70-4B89-BDB0-7815DB076A0A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "User.Persistence", "src\Services\User\User.Persistence\User.Persistence.csproj", "{144E945F-FB1B-422D-B917-9B40C9A6409E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "User.Persistence", "src\Services\User\User.Persistence\User.Persistence.csproj", "{144E945F-FB1B-422D-B917-9B40C9A6409E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "User.Api", "src\Services\User\User.Api\User.Api.csproj", "{6FF9FD3C-9E56-4AD4-8BEA-5613EC7D617E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "User.Api", "src\Services\User\User.Api\User.Api.csproj", "{6FF9FD3C-9E56-4AD4-8BEA-5613EC7D617E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{E0925021-95FF-4A2C-ADB2-F06FF8126A87}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gateway.Api", "src\Gateways\Gateway.Api\Gateway.Api.csproj", "{01616A92-8674-428B-B10E-EE18C554C5B8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Proxies", "Proxies", "{564FC126-C721-4BA7-B4BB-5A838E485179}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{678D40F0-9100-4B13-813A-0E6C8230EA2C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{E216E143-B991-462C-B800-63CAE78753B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api.Gateway.Application", "src\Gateways\Api.Gateway.Application\Api.Gateway.Application.csproj", "{EDD3391C-23FD-43D9-8DE5-FA4264C5FA03}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -143,6 +155,14 @@ Global
 		{6FF9FD3C-9E56-4AD4-8BEA-5613EC7D617E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6FF9FD3C-9E56-4AD4-8BEA-5613EC7D617E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6FF9FD3C-9E56-4AD4-8BEA-5613EC7D617E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01616A92-8674-428B-B10E-EE18C554C5B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01616A92-8674-428B-B10E-EE18C554C5B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01616A92-8674-428B-B10E-EE18C554C5B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01616A92-8674-428B-B10E-EE18C554C5B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDD3391C-23FD-43D9-8DE5-FA4264C5FA03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDD3391C-23FD-43D9-8DE5-FA4264C5FA03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDD3391C-23FD-43D9-8DE5-FA4264C5FA03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDD3391C-23FD-43D9-8DE5-FA4264C5FA03}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -180,6 +200,12 @@ Global
 		{41DCB725-CB70-4B89-BDB0-7815DB076A0A} = {258F7E96-C5C1-4DAF-855D-77BE4FC29DE0}
 		{144E945F-FB1B-422D-B917-9B40C9A6409E} = {AF29578E-A01C-4BDD-826B-2720BF344503}
 		{6FF9FD3C-9E56-4AD4-8BEA-5613EC7D617E} = {2473F124-282B-4D8F-8075-1FD5F0736C3C}
+		{E0925021-95FF-4A2C-ADB2-F06FF8126A87} = {DE490907-CE78-4098-8D52-704B107452AF}
+		{01616A92-8674-428B-B10E-EE18C554C5B8} = {E216E143-B991-462C-B800-63CAE78753B3}
+		{564FC126-C721-4BA7-B4BB-5A838E485179} = {DE490907-CE78-4098-8D52-704B107452AF}
+		{678D40F0-9100-4B13-813A-0E6C8230EA2C} = {E0925021-95FF-4A2C-ADB2-F06FF8126A87}
+		{E216E143-B991-462C-B800-63CAE78753B3} = {E0925021-95FF-4A2C-ADB2-F06FF8126A87}
+		{EDD3391C-23FD-43D9-8DE5-FA4264C5FA03} = {678D40F0-9100-4B13-813A-0E6C8230EA2C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BAE17A65-087F-4CEB-B559-046D03651D44}
