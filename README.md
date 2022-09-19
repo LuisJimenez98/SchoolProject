@@ -10,7 +10,7 @@ Actualizar las cadenas de conexión de cada Microservicio por la que disponen.
 - [x] School.Api: localhost:5091
 - [x] Matter.Api: localhost:5295
 - [x] Qualification.Api: localhost:5011
-- [x] User.Api: localhost:40000
+- [x] User.Api: localhost:5243
 
 ### 3. Ejecutar las migraciones por cada microservicio en la capa de Persistence
 ```
