@@ -14,7 +14,7 @@ Actualizar las cadenas de conexión de cada Microservicio por la que disponen.
 
 ### 3. Ejecutar las migraciones por cada microservicio en la capa de Persistence
 ```
-update-database -context ApplicationDbContext
+update-database
 ```
 ### 4.  Configurar las propiedades de la solución para iniciar los siguientes servicios web
 - [x] Gateway.Api
