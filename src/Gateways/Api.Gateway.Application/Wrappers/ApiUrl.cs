@@ -11,5 +11,6 @@ namespace Api.Gateway.Application.Wrappers
         public string SchoolUrl { get; set; } 
         public string MatterUrl { get; set; } 
         public string QualificationUrl { get; set; } 
+        public string UserUrl { get; set; } 
     }
 }

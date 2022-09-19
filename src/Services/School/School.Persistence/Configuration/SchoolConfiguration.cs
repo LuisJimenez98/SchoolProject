@@ -15,6 +15,10 @@ public class SchoolConfiguration
             .HasMaxLength(256);
 
         entityBuilder
+            .HasIndex(x => x.Nombre)
+            .IsUnique();
+
+        entityBuilder
             .Property(c => c.TipoColegio)
             .IsRequired()
             .HasMaxLength(64);

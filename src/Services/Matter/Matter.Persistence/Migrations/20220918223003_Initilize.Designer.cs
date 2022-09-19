@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Matter.Persistence.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20220917170919_Initizalize")]
-    partial class Initizalize
+    [Migration("20220918223003_Initilize")]
+    partial class Initilize
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -52,8 +52,8 @@ namespace Matter.Persistence.Migrations
 
                     b.Property<string>("Nombre")
                         .IsRequired()
-                        .HasMaxLength(256)
-                        .HasColumnType("nvarchar(256)");
+                        .HasMaxLength(128)
+                        .HasColumnType("nvarchar(128)");
 
                     b.Property<int>("NumeroEstudiantes")
                         .HasColumnType("int");
@@ -64,6 +64,9 @@ namespace Matter.Persistence.Migrations
                         .HasColumnType("nvarchar(16)");
 
                     b.HasKey("MateriaId");
+
+                    b.HasIndex("Nombre")
+                        .IsUnique();
 
                     b.ToTable("Materias", "Matter");
                 });

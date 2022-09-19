@@ -4,7 +4,7 @@
 
 namespace Matter.Persistence.Migrations
 {
-    public partial class Initizalize : Migration
+    public partial class Initilize : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -19,7 +19,7 @@ namespace Matter.Persistence.Migrations
                     MateriaId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     ColegioId = table.Column<int>(type: "int", nullable: false),
-                    Nombre = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: false),
+                    Nombre = table.Column<string>(type: "nvarchar(128)", maxLength: 128, nullable: false),
                     Area = table.Column<string>(type: "nvarchar(128)", maxLength: 128, nullable: false),
                     NumeroEstudiantes = table.Column<int>(type: "int", nullable: false),
                     DocenteAsignado = table.Column<string>(type: "nvarchar(512)", maxLength: 512, nullable: false),
@@ -30,6 +30,13 @@ namespace Matter.Persistence.Migrations
                 {
                     table.PrimaryKey("PK_Materias", x => x.MateriaId);
                 });
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Materias_Nombre",
+                schema: "Matter",
+                table: "Materias",
+                column: "Nombre",
+                unique: true);
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

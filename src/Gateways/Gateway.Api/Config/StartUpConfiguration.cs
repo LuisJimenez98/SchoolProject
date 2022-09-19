@@ -1,4 +1,5 @@
-﻿using Api.Gateway.Application.Wrappers;
+﻿using Api.Gateway.Application.Proxies;
+using Api.Gateway.Application.Wrappers;
 
 namespace Gateway.Api.Config
 {
@@ -18,6 +19,7 @@ namespace Gateway.Api.Config
             service.AddHttpClient<ISchoolProxy, SchoolProxy>();
             service.AddHttpClient<IMatterProxy, MatterProxy>();
             service.AddHttpClient<IQualificationProxy, QualificationProxy>();
+            service.AddHttpClient<IUserProxy, UserProxy>();
 
             return service;
         }
